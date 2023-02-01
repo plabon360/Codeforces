@@ -1,0 +1,1 @@
+#define _CRT_SECURE_NO_WARNINGS#include <iostream>#include <cstdio>#include <math.h>#include <string>#include <algorithm>using namespace std;int n, k;int ans;int main() {	scanf("%d %d", &n, &k);	int r = 240 - k;	for (int i = 1;i<=n;i++) {		if (r >= 2.5*i*(i + 1)) {			ans = i;		}		else {			break;		}	}	printf("%d\n", ans);	return 0;}

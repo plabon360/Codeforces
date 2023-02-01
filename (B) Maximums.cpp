@@ -1,0 +1,1 @@
+#include<bits/stdc++.h>#define ll long long intusing namespace std;int main(){    ll n;    cin>>n;    ll b[n];    for(ll i=0;i<n;i++) cin>>b[i];    ll x=0;    ll a[n];    for(ll i=0;i<n;i++)    {        a[i]=b[i]+x;        x=max(x,a[i]);        cout<<a[i]<<' ';    }}
